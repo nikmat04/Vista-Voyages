@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/bed3b1b3a6.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+        <title>
+            Vistavoyages
+        </title>
+        <link rel="stylesheet" href="pstyles.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script defer src="app.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/VistaLogo.png" class="logo">
+                    <!-- <p class="Vista">Vista Voyages</p> -->
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="header-text">
+                    <h1>VISTA VOYAGES</h1>
+                    <p>Premium Hospitality & Medicinal Tourism</p>
+                </div> -->
+            </div>
+        </div>
+        <section >
+
+            <div id="home">
+                <h1 class="text1 hidden">VISTA VOYAGES</h1>
+                <p class="text2 hidden">Premium Hospitality & Medicinal Tourism</p>
+            </div>
+        </section>
+
+
+            <!-- -----------------------about------------------------- -->
+        <section class="hidden">
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <!-- <div class="about-col-1">
+                            <img src="images/nikhil2.jpg">
+                        </div> -->
+                        <div class="about-col-2">
+                            <h1 class="sub-title hidden">ABOUT US</h1>
+                            <p> Vista Voyages stands as a distinguished premium tourism and hospitality enterprise 
+                                specializing in medicinal tourism, travel packages, exclusive private villas,
+                                 and a spectrum of premium experiences. With strategic and exclusive partnerships forged 
+                                 with world-class resorts, we take pride in crafting and planning your personalized 
+                                 itineraries that will make your journey special. At Vista Voyages, our commitment lies in 
+                                 elevating your journey by providing our customers with access to exceptional destinations 
+                                 and luxurious accommodations, all while facilitating comprehensive travel planning 
+                                 services. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------------------------packages----------------------------------->
+        <section >
+
+                <div id="packages">
+                    <div class="container">
+                        <h3 class="sub-title1">Packages</h3>
+                        <div class="packages-list">
+                            <div class="sub-package hidden">
+                                <h4>MUNNAR</h4>
+                                <img class="package-image" src="images/munnar.jpg">
+                                <div class="Packages-Info">Munnar, a serene hill station in Kerala, India, captivates with lush tea plantations, mist-covered mountains, and vibrant flora. A haven for nature lovers and tranquil seekers.</div>
+                    
+                            </div>
+                            <div class="sub-package hidden">
+                                
+                                <h4>VAGAMON</h4>
+                                <img class="package-image" src="images/vagamon.jpg">
+                                <div class="Packages-Info">Vagamon, a picturesque hill station in Kerala, India, enchants with rolling green hills, meadows, and pine forests. A tranquil retreat offering serenity and natural beauty.</div>
+                            
+                            </div>
+                            <div class="sub-package hidden"> 
+                                <h4>THEKKADY</h4>
+                                <img class="package-image" src="images/thekkady.jpg">
+                                <div class="Packages-Info">Thekkady, nestled in Kerala's Western Ghats, is famed for Periyar National Park's wildlife sanctuary. Explore dense forests, wildlife, and the scenic Periyar Lake, creating a nature lover's paradise.</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <!-----------------------------contact------------------------------------>
+                <div id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h5 class="sub-title2">Contact Us</h5>
+                                
+                                    <!-- <span><ion-icon name= "mail"></ion-icon></span>
+                                    <p>info@vistavoyages.in</p> -->
+                                <p><i class="fa-solid fa-envelope"></i>info@vistavoyages.in</p>
+                                <p><i class="fa-solid fa-phone-square"></i>+91 8590533562</p>
+                                <p><i class="fa-solid fa-square-phone"></i>+91 9895472226</p>
+                                
+                                <!-- <div class="social-icons">
+                                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href=""><i class="fa-brands fa-github"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div> -->
+                                
+                            </div>
+                            <div class="contact-right">
+                                <form name="submit-to-google-sheet">
+                                    <input type="text" name="Name" placeholder="Your Name" required>
+                                    <input type="email" name="Email" placeholder="Your Email" required>
+                                    <textarea name="Message" rows="3" placeholder="Your Message" required></textarea>
+                                    <button type="submit" class="btn btn2">Submit</button> 
+                                </form>
+                                <span id="msg"></span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                <div class="copyright">
+                    <p> Copyright © VISTA VOYAGES </p>
+                </div>   
+                </div>
+
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbzuGiDng4PCwUbT-bnd29FF-_yPW6TfA8tD_SHAz42fuHxz2S749jrg5logNEfGFaDT6Q/exec'
+                    const form = document.forms['submit-to-google-sheet']
+                    const msg = document.getElementById("msg")
+
+                  
+                    form.addEventListener('submit', e => {
+                      e.preventDefault()
+                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => {
+                            msg.innerHTML = "Message Sent"
+                            setTimeout(function(){
+                                msg.innerHTML = ""
+                            },5000)
+                            form.reset()
+                        })
+                        .catch(error => console.error('Error!', error.message))
+                    })
+                  </script>
+
+                <script src="main.js"></script>
+    </body>
+</html>
+                        
+
+        
